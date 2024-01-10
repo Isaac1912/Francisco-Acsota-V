@@ -1,0 +1,30 @@
+<script>
+
+    // Realizar un algoritmo que imprima los 10 primeros primos y contar cuantos están entre
+    //1 - 10 y 15 – 25
+
+    let cont_num = Number(prompt('Ingrese el primer numero'))
+    let num = Number(prompt('Ingrese el segundo numero'))
+    let cont_primos = 2
+
+    while (cont_num < num) {
+        if (cont_num < 1) {
+            cont_num = 2
+        } else {
+            while (cont_num % cont_primos != 0) {
+                cont_primos++
+
+            }
+            if (cont_primos == num) {
+                document.write(num, ' es primo')
+                console.log(num, ' es primo')
+                cont_num++
+            } else {
+                console.log(cont_num)
+            }
+        }
+
+
+    }
+
+</script>

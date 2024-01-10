@@ -1,0 +1,27 @@
+<script>
+
+
+    let calif = Number(prompt('Ingrese la calificación (entre 1 y 20):'))
+    let resul = ''
+
+    if (calif < 1 || calif > 20) {
+        document.write('Ingrese una calificación dentro de 1 y 20')
+    } else {
+        if (calif >= 19) {
+            resul = 'SOBRESALIENTE'
+        } else if (calif >= 16) {
+            resul = 'MUY BUENO'
+        } else if (calif >= 13) {
+            resul = 'BUENO';
+        } else if (calif >= 10) {
+            resul = 'REGULAR'
+        } else {
+            resul = 'DEFICIENTE'
+        }
+        console.log(calif)
+        console.log(resul)
+        document.write('Calificación numérica: ', calif, '<br>')
+        document.write('La calificacion es: ', resul)
+    }
+
+</script>

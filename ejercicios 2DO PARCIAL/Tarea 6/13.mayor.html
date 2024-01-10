@@ -1,0 +1,39 @@
+<script>
+
+    // Desarrolle un algoritmo que lea cuatro números diferentes y a continuación imprima el mayor 
+    // de los cuatro números introducidos y también el menor de ellos. 
+
+    let num1 = prompt("Ingrese el primer numero")
+    let num2 = prompt("Ingrese el segundo numero")
+    let num3 = prompt("Ingrese el tercer numero")
+    let num4 = prompt("Ingrese el cuarto numero")
+
+    let mayor = num1
+    let menor = num1
+
+    if (num2 > mayor) {
+        mayor = num2
+    }
+    if (num3 > mayor) {
+        mayor = num3
+    }
+    if (num4 > mayor) {
+        mayor = num4
+    }
+
+    if (num2 < menor) {
+        menor = num2
+    }
+    if (num3 < menor) {
+        menor = num3
+    }
+    if (num4 < menor) {
+        menor = num4
+    }
+
+    console.log(`El numero mayor es ${mayor}`)
+    console.log(`El numero menor es ${menor}`)
+    document.write(`El numero mayor es ${mayor}`,'<br>')
+    document.write(`El numero menor es ${menor}`)
+
+</script>
